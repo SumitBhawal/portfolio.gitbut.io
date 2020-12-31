@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+h1 {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 20s;
+}
+
+.head {
+    font-size: 30px;
+}
+
+.one {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 10s steps(24) infinite alternate-reverse;
+    border-right: 3px solid;
+    font-size: 50px;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    80% {
+        width: 24ch;
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: radial-gradient(#111, #000);
+}
+
+.glow {
+    position: relative;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #222 0%, #222 50%, #111 50%, #111 100%);
+
+}
